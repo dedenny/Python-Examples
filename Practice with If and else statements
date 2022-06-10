@@ -1,0 +1,23 @@
+# Challenge problems
+## We use a series of conditional statements to check the ranges of the grade. By using elif statements in sequence, we can check the specific ranges for each grades.
+
+
+## For example: If num >= 93 is False, we can then go to the next elif conditional by checking if num is > 83. When our program gets to this second conditional we know already that num cannot be >= 93 so we are checking the range between 83 < num < 93.
+
+def calculate_grade(num):
+  #check if the num is an A
+  if num >= 93:
+    print('A')
+  # check if num is a B
+  elif num > 83:
+    print('B')
+  # check if num is a C
+  elif num > 73:
+    print('C')
+  #check if num is a D
+  elif num >= 65:
+    print('D')
+  # if all other conditions are false, we know grade is a F
+  else:
+    print('F')
+
