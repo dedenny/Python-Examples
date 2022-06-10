@@ -1,0 +1,32 @@
+#Decision Tree example
+# Your supervisor wants you to write a program that takes in weather conditions to determine whether or not they should go and play golf. They currently use this decision tree to decide if he should play or not play.
+
+#Play Golf Diagram
+
+#To read this tree, first, we would check the outlook.
+
+# If the outlook is rainy, then we check if it is windy. If windy is true, we don't play. If windy is false, we don't play.
+# If the outlook is overcast, then we can play.
+# If the outlook is sunny, then we check the humidity. If the humidity is high we don't play. If the humidity is normal, we play.
+# Write a function playGolf that takes in the outlook, windy, and humidity as input and prints out either don't play or play.
+
+def playGolf(outlook, windy, humidity):
+  # first we check the status of outlook
+  if outlook == 'rainy':
+    # if outlook is rainy, we check windy status
+    if windy == 'True':
+      return "play"
+    else:
+      return "don't play"
+  elif outlook == 'sunny':
+    # if outlook is sunny, we check humidity
+    if humidity == "high":
+      return "don't play"
+    else:
+      return "play"
+  else:
+    # if outlook is not rainy or sunny, we know it's overcast.
+    return "play"
+
+print("Input: outlook = ", outlook, " windy = ", windy, " humidity = ", humidity)
+print("Output: ", playGolf(outlook, windy, humidity))
