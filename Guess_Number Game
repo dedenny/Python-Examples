@@ -1,0 +1,21 @@
+##Try writing a function of your own guess_number that takes in a guess from the user and returns whether or not they are higher, lower, or on target to the secret number.
+
+##Input: int data type that represents guess.
+##Output: str data type that is either guess is higher, guess is lower, and guess is correct.
+
+# Global Variable
+secret_number = 2045
+
+# Define the function `guess_number` here
+def guess_number(guess):
+  if (guess < secret_number):
+    return "guess is higher"
+  elif (guess > secret_number):
+    return "guess is lower"
+  else:
+    return "guess is correct"
+
+# Add calls to the function below
+guess = input("Guess what the secret number is (int): ")
+result = guess_number(int(guess))
+print(result)
