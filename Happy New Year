@@ -1,0 +1,15 @@
+# Write a function `happyNewYear` that takes in a single parameter, `year`. 
+# If it is a new **millennium**, the function should print `“Happy New Millenium!”`. If it is a new **decade**, the function should print `“Happy New Decade!”`, otherwise it should print `“Happy New Year!”`. 
+
+def happyNewYear(year):
+  # If year is a mutliple of 1000, it's a millenium
+  if year % 1000 == 0:
+    print("Happy New Millenium!")
+  # If year is a multiple of 10, it's a decade
+  elif year % 10 == 0:
+    print("Happy New Decade!")
+  # Otherwise, we print Happy New Year
+  else:
+    print("Happy New Year!")
+
+
