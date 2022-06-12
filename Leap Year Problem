@@ -1,0 +1,10 @@
+# create a function isLeapYear takes a parameter of year
+# outputs either T or F if it is a leap year or not
+
+
+def isLeapYear(year):
+    leap = False
+    if (year % 4 ==0 and year % 100 != 0) or year % 400 == 0:
+        leap = True
+    return leap
+if __name__ == '__main__':
