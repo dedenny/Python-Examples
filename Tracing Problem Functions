@@ -1,0 +1,10 @@
+#What results when you call surprise (146)?
+
+def surprise (b):
+  if b % 2 == 0:
+    return b % 10
+  else:
+    return b/10
+print (surprise(146))
+
+# answer = 6
