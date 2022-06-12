@@ -1,0 +1,9 @@
+# what code should you replace to result in 0, 2, 4, 6, 8, 10
+
+count = 0
+
+<missing code>
+  print(count, "")
+  count += 2
+  
+  #answer while count <= 10:
