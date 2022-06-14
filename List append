@@ -1,0 +1,8 @@
+##
+## Question: What is the output of the following code snippet? 
+
+example_list = [5, 10, 15, 20, 25]
+example_list.append(30)
+print(example_list)
+
+#solution [5, 10, 15, 20, 25, 30]
