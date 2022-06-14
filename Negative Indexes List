@@ -1,0 +1,6 @@
+##What is the output of the following code snippet? 
+
+example_list = [5, 10, 15, 20, 25]
+print(example_list[-2])
+
+##solution 20 (-2 gives the second to last item in list)
