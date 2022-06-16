@@ -1,0 +1,10 @@
+##Write a program that when given a number n, we need to find the last digit in factorial n.
+
+
+def last_fact_digit(n):
+    if (n == 0): return 1
+    elif (n <= 2): return n
+    elif (n == 3): return 6
+    elif (n == 4): return 4
+     
+    else: return 0
