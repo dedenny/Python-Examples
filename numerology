@@ -1,0 +1,12 @@
+###n numerology, the number 222 is linked to positive thoughts, clarity, and growth. Create a function called has_222() that checks if a given list contains three consecutive elements with a value of 2. If so, return True. Otherwise, return False.
+def has_222(nums):
+  # Loops over the list elements until the  
+  #l ast two elements to avoid IndexError
+  for i in range(len(nums)-2):
+    # Check if index and consectutive elements
+    # are equal to 2
+    if nums[i] == 2 and nums[i+1] == 2 and nums[i+2] == 2:
+      # Return if three consecutive 2s
+      return True
+  # Return False if there are not three consecutive 2s
+  return False
