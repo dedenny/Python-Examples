@@ -1,0 +1,32 @@
+# Menu
+menu = ["Broccoli", "Zucchini", "Salad", 
+        "Peas", "Carrots", "green beans", 
+        "parsnips", "tomatoes", 
+        "lemon", "lime"]
+
+
+# Print menu
+print("-- VEGGIE MENU -- ")
+for ind, val in enumerate(menu):
+  print(ind+1, val)
+
+# Prompt user for order and adds item to order list
+order = []
+response = int(input("\nWhat would you like to order? (1-10):"))
+menu_item = menu[response-1]
+order.append(menu_item)
+
+# Asks user for remainder of order. Exits on Done
+while True:
+  response = input("\nWould you like anything else? ")
+
+  if response == "Done":
+    break
+  menu_item = menu[int(response)-1]
+  order.append(menu_item)
+  
+
+# Prints exit message and user's order
+print("\nThank you for your order! Here is your order: ")
+for item in order:
+  print(item)  
