@@ -1,0 +1,6 @@
+ biologist discovered a new organism that doubles its population every week. This means that by starting with only 1 organism, a week later the biologist will have 2 organisms. The following week they will have produced a total of 4 organisms.
+
+def double_population(weeks):
+    if weeks == 0:
+        return 1
+    return double_population(weeks - 1) * 2
