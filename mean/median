@@ -1,0 +1,21 @@
+##Write a function called mean() that calculates and returns the arithmetic average of a given list of number.
+
+
+##🌟 Extension: Write a function called median() that returns the median of a given list of numbers using conditional logic.
+
+
+# Mean
+def mean(nums):
+  sum = 0
+  for num in nums:
+    sum+=num
+  return sum/len(nums)
+
+# Median
+def median(nums):
+  n = len(nums)
+  index = int(n / 2)
+
+  if n % 2:
+    return nums[index]
+  return (nums[index - 1] + nums[index + 1]) / 2
