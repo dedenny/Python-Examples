@@ -1,0 +1,36 @@
+##Create Snake eyes game
+
+mport random
+dice1_outcomes = []
+diec2_outcomes = []
+rolls = 0
+doubles = 0
+
+while True:
+  dice1  = random.randint(1, 6)
+  dice2  = random.randint(1, 6)
+
+  # Append outcomes to corresponding lists
+  dice1_outcomes.append(dice1)
+  dice2_outcomes.append(dice2)
+  
+  # Increment roll count
+  rolls += 1
+
+  # Increment double count if double
+  if dice1 == dice2:
+    doubles += 1
+    
+  # Print outcome for rollsprint
+  print(rolls, ". Dice 1:", dice1, "and Dice 2:", dice2)
+      
+  # End game if snake eyes and print game stats
+  if dice1 == 1 and dice2 == 1:
+    print("You got snake eyes! 🐍👀")
+    print("Number of rolls:", rolls)
+    print("Number of doubles:", doubles)
+    print("Average roll for dice #1", sum(diec1_outcomes)/rolls)
+    print("Average roll for dice #2", sum(diec2_outcomes)/rolls)
+    break
+
+    
