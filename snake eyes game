@@ -29,8 +29,8 @@ while True:
     print("You got snake eyes! 🐍👀")
     print("Number of rolls:", rolls)
     print("Number of doubles:", doubles)
-    print("Average roll for dice #1", sum(diec1_outcomes)/rolls)
-    print("Average roll for dice #2", sum(diec2_outcomes)/rolls)
+    print("Average roll for dice #1", sum(dice1_outcomes)/rolls)
+    print("Average roll for dice #2", sum(dice2_outcomes)/rolls)
     break
 
     
