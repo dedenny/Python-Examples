@@ -2,7 +2,7 @@
 
 mport random
 dice1_outcomes = []
-diec2_outcomes = []
+dice2_outcomes = []
 rolls = 0
 doubles = 0
 
