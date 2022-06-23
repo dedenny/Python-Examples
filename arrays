@@ -1,0 +1,8 @@
+##Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+##You may assume that each input would have exactly one solution, and you may not use the same element twice. You should return the indices in increasing order (ascending order).
+
+def target_sum(nums, target):
+    for idx, val in enumerate(nums):
+        if target - val in nums[idx + 1:]:
+            return [idx, nums[idx + 1:].index(target - val) + (idx + 1)]
