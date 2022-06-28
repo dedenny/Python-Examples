@@ -1,0 +1,54 @@
+Problem #1
+What is the return value of the function call mystery([1,2,3,4], 10)?
+
+def mystery(lst, i):  
+  if len(lst) == 0:
+    return None
+  return lst[i % len(lst)]
+  
+  The return value of mystery([1,2,3,4], 10) is 3.
+  
+  Problem #2
+What is the return value of the function call mystery([8,1,2,9,4,6])?
+
+def mystery(lst):  
+  for x, y in enumerate(lst):
+    if x == y:
+      print(x, end=" ")
+      The return value of mystery([8,1,2,9,4,6]) is 1 2 4
+      
+      Problem #3
+What is printed by executing the following code?
+
+a = 0
+b = 0
+while a>=0 and b>=0:
+  b +=1
+print(a)
+The return value of mystery([1,2,9,9,0] is [1,1,1,0,0,0,0,0,0,2].
+
+Problem #4
+Write a function called print_backwards() that takes in a single parameter, lst. The function prints the given list lst in reverse order without using Python’s built-in reverse() function.
+
+Examples
+
+Input: ["peach", "orange", "apple", "banana"]
+Output: "banana" "apple" "orange" "peach"
+
+Input: [1, 2, 3]
+Output: 3 2 1
+
+Input: []
+Output: 
+
+def print_backwards(lst):
+
+  ind = -1
+  while ind >= (len(lst) * -1):
+    print(lst[ind])
+    ind -= 1
+
+
+print_backwards(["peach", "orange", "apple", "banana"])
+
+
