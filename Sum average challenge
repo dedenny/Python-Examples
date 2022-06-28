@@ -1,0 +1,18 @@
+##Given a string str1, write a program to return the sum and average of the digits that appear in the string, ignoring all other characters.
+
+
+##Challenge: Return length of the longest consecutive substring of numeric characters.
+
+txt = "of123456hi"
+nums = "0123456789"
+
+count = 0
+sum = 0
+
+for char in txt:
+  if char in nums:
+    count += 1
+    sum += int(char)
+
+print("Sum of digits: " + str(sum))
+print("Average of digits: " + str(sum/count))
