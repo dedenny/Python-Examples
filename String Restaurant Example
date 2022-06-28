@@ -1,0 +1,18 @@
+#String example: Create a program that prompts a user for the restaurant bill amount and number of people in the party. The program calculates and prints the total amount that each person has to pay for restaurant bill in a user-friendly format.
+
+
+
+
+restaurant_bill_amount = input("How much is the bill? ")
+group_size = input("How many people are in your group? ")
+
+# Removes $ if included in user input
+if "$" in restaurant_bill_amount:
+  restaurant_bill_amount = restaurant_bill_amount[1:]
+  
+
+# Converts to appropriate data type and calculates split bill
+split_bill = float(restaurant_bill_amount) / int(group_size)
+
+# Concatenates and prints results
+print("Each person owes $"+ str(split_bill))
