@@ -1,0 +1,87 @@
+##Hacker rank problems
+
+##def cm_to_in(x):
+
+   ##return x / 2.54
+   
+##Which of the following function calls run without error?
+
+##I. cm_to_in(5)
+
+##II. cm_to_in(4.32)
+
+##III. cm_to_in("20")
+
+## Answer: I and II only. option III type error
+
+## what does following code segment print
+nums =  [7, 2, 4, 3, 0, 10]
+for ind, val in enumerate(nums):
+   if ind >= val:
+      print(ind, end = " ")
+      
+      answer = 3, 4
+      
+ ## what is printed?
+ count = 0
+x = 1
+while count < 10 or x < 5:
+   count += x
+print(count)
+
+#Nothing infinite loop==answer
+
+
+Coding problems
+Write a function standard_to_military() that takes three parameters hours, mins, and time_of_day that returns the hours and minutes converted from 12-hour format to 24-hour format.
+
+Notes:
+
+Midnight is 12:00 AM on a 12-hour clock and 00:00 on a 24-hour clock
+
+Noon is 12:00 PM on 12-hour clock and 12:00 on 24-hour clock
+def standard_to_military(hours, time_of_day):
+    if hours == 12 and time_of_day == "PM":
+        return 12
+    elif hours == 12 and time_of_day == "AM":
+        return 0
+    else:
+         if time_of_day == "AM":
+             return hours - 12
+         if time_of_day == "PM":
+             return hours + 12
+             
+A palindrome is a sequence that reads the same backward as forward. Write a function is_palindrome() that takes an integer list num_list as a parameter and outputs either True or False if it is a palindrome.
+def is_palindrome(num_list):
+    if num_list == num_list[::-1]:
+        return True
+    else:
+        return False
+        
+ Write a function rotate_right() that takes an integer list num_list and returns the list with its elements rotated to the right. A list is said to be right rotated if all elements of the array are moved to its right by one position.
+def rotate_right(num_list):
+  for i in range(0, n):    
+    last = num_list[len(num_list)-1];    
+    for j in range(len(num_list)-1, -1, -1):    
+        num_list[j] = num_list[j-1];   
+    num_list[0] = last;   
+    
+  Write a function rotate_right() that takes an integer list num_list and returns the list with its elements rotated to the right. A list is said to be right rotated if all elements of the array are moved to its right by one position.
+
+def rightRotateByOne(num_list):
+    last = num_list[-1]
+    for i in reversed(range(len(num_list) - 1)):
+        num_list[i + 1] = num_list[i]
+ 
+    num_list[0] = last
+ 
+
+def rotate_elements(num_list, k):
+    if k < 0 or k >= len(num_list):
+        return
+ 
+    for i in range(k):
+        rightRotateByOne(num_list)
+
+
+
